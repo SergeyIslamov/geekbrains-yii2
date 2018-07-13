@@ -9,7 +9,7 @@ $this->title = Yii::t('app', 'Sign up');
 
 <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>Please fill out the following fields to sign up:</p>
+    <p><?= Yii::t('app', 'Fields to sign up') ?>:</p>
 
     <?php $registerForm = ActiveForm::begin([
         'id' => 'register-form',
@@ -27,7 +27,7 @@ $this->title = Yii::t('app', 'Sign up');
 
         <div class="form-group">
             <div class="col-lg-offset-1 col-lg-11">
-                <?= Html::submitButton('Sign Up', ['class' => 'btn btn-primary', 'name' => 'register-button']) ?>
+                <?= Html::submitButton(Yii::t('app', 'Sign up'), ['class' => 'btn btn-primary', 'name' => 'register-button']) ?>
             </div>
         </div>
 
